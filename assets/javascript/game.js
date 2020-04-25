@@ -10,6 +10,19 @@ var guessesDown = document.getElementById("guess");
 document.onkeyup = function makeChoice(event) {
 
     var userChoice = String.fromCharCode(event.keyCode).toLowerCase();
+
+    //Code to avoid duplicates for fun.
+    // for(let i=0;i<userListing.length;i++) 
+    // {
+    //   
+    //   if (userListing[i] === userChoice) 
+    //     {
+    //       alert("Thats a Duplicate");
+    //       break;
+    //     }
+      
+    // }
+      
     userListing.push(userChoice);
     document.getElementById("letters").textContent = "Letters: " + userListing;
 
