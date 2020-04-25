@@ -11,12 +11,13 @@ document.onkeyup = function makeChoice(event) {
 
     var userChoice = String.fromCharCode(event.keyCode).toLowerCase();
 
-    //Code to avoid duplicates for fun.
+    // Code to avoid duplicates for fun.
     // for(let i=0;i<userListing.length;i++) 
     // {
-    //   
+      
     //   if (userListing[i] === userChoice) 
     //     {
+    //       numWrongGuesses--;
     //       alert("Thats a Duplicate");
     //       break;
     //     }
